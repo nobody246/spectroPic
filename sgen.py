@@ -12,7 +12,7 @@ from PIL import Image
 volume = 1
 fs = 44100
 duration = .20
-sampleSz = 1024
+sampleSz = 2048
 f = 0
 p = pyaudio.PyAudio()
 stream = p.open(format=pyaudio.paFloat32,
