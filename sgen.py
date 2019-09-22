@@ -11,7 +11,7 @@ from PIL import Image
 #todo add as params
 volume = 1
 fs = 44100
-duration = .25
+duration = .20
 sampleSz = 1024
 f = 0
 p = pyaudio.PyAudio()
@@ -76,7 +76,7 @@ while colInd < len(picData):
       if bt:
          w.append(btInd * 200)
       else:
-         w.append(1)
+         w.append(0)
       btInd+=1
    ww.append(w)
    colInd+=1
